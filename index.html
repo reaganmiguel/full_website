@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href=""><img class="logo" src="./images/Airbnb_Logo.png" alt=""></a>
+    <div></div>
+    <div class="second-nav-tab">
+      <p class="second-nav-tab-item">Anywhere</p>
+      <span class="span-or">|</span>
+      <p class="second-nav-tab-item">Any week</p>
+      <span class="span-or">|</span>
+      <p class="second-nav-tab-item-selected">Add guests</p>
+      <div class="circle">
+        <svg class="search" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" stroke="white" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="third-nav-tab">
+      <p>Airbnb you home</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+      </svg>
+      <div class="third-nav-tab-guests">
+        <svg class ="list" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>      
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </div>      
+    </div>    
+  </nav>
+  <!-- type of stays -->
+  <div class="stay-type">
+    <div>
+      <img class= "stay-type-img" src="./images/i1.jpeg" alt="">
+      <p class = "stay-type-img-item-one">Countryside</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i2.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Rooms</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i3.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Breakfasts</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i4.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Tiny homes</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i5.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Mansions</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i6.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Treehouses</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i7.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Amazing Pools</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i8.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Farms</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i9.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Amazing Views</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i10.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Lakefront</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i11.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">OMG!</p>
+    </div>
+    <div>
+      <img class= "stay-type-img-not-selected" src="./images/i8.jpeg" alt="">
+      <p class = "stay-type-img-item-not-selected">Farms</p>
+    </div>
+    <div class="next-filter-div">
+      <button class="next-button">
+        <div class="next-button-circle">
+            <span>&gt;</span>
+        </div>
+      </button>
+      <div class="filter-div">
+        <img class="filter" src="./images/filter.png" alt="">
+        <p>Filter</p>       
+      </div> 
+    </div>
+  </div>
+
+  <!-- display total price -->
+  <div class="total-price-div">
+    <p class="second-nav-tab-item">Display Total Price</p>
+    <span class="span-or">|</span>
+    <p class="second-nav-tab-item-selected">Include all fees, before taxes</p>
+    <div class="toggle">
+      <img class="toggle-img" src="./images/off-button.png" alt="">
+    </div>
+  </div>
+  <!-- cards section -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">
+          <img src="https://source.unsplash.com/1600x1000/?House" alt="" class="card-img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+              <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+          </svg>
+          <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+          </svg>
+      </div>
+      <div class="card-star">
+        <div class="card-details">
+          <h3 class="name">Tarur, India</h3>
+          <p class="distance">491 kilometers away</p>
+          <p class="distance">17-22 Sep</p>
+          <p class="price"><span class="price-value">₹9699</span> night</p>
+        <!-- </div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <p>4.3</p>
+        <div> -->
+      </div>    
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?OldHouse" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Karnataka, India</h3>
+        <p class="distance">199 kilometers away</p>
+        <p class="distance">24-29 Sep</p>
+        <p class="price"><span class="price-value">₹5749</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Hill House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Kodiakanal, India</h3>
+        <p class="distance">304 kilometers away</p>
+        <p class="distance">21-25 Sep</p>
+        <p class="price"><span class="price-value">₹12749</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Apartment" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Kodagu, India</h3>
+        <p class="distance">123 kilometers away</p>
+        <p class="distance">12-22 Sep</p>
+        <p class="price"><span class="price-value">₹9537</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Kochi House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Kochi, India</h3>
+        <p class="distance">421 kilometers away</p>
+        <p class="distance">17-22 Sep</p>
+        <p class="price"><span class="price-value">₹9845</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Munnar House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Munnar, India</h3>
+        <p class="distance">231 kilometers away</p>
+        <p class="distance">12-29 Sep</p>
+        <p class="price"><span class="price-value">₹6803</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Banglore House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Banglore, India</h3>
+        <p class="distance">21 kilometers away</p>
+        <p class="distance">11-15 Sep</p>
+        <p class="price"><span class="price-value">₹7683</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Villa" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Delhi, India</h3>
+        <p class="distance">2491 kilometers away</p>
+        <p class="distance">14-22 Sep</p>
+        <p class="price"><span class="price-value">₹22490</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Assam House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Assam, India</h3>
+        <p class="distance">4491 kilometers away</p>
+        <p class="distance">16-22 Sep</p>
+        <p class="price"><span class="price-value">₹18345</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Punjab House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Punjab, India</h3>
+        <p class="distance">5491 kilometers away</p>
+        <p class="distance">26-29 Sep</p>
+        <p class="price"><span class="price-value">₹16782</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Kollam House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Kollam, India</h3>
+        <p class="distance">2491 kilometers away</p>
+        <p class="distance">12-23 Sep</p>
+        <p class="price"><span class="price-value">₹6473</span> night</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+        <img src="https://source.unsplash.com/1600x1000/?Trivandrum House" alt="" class="card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="heart">
+            <path d="M8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" fill="gray" stroke="white" stroke-width="2"></path>
+        </svg>
+        <svg class="slide" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white" stroke-width="2"></path>
+        </svg>
+    </div>
+    <div class="card-details">
+        <h3 class="name">Trivandrum, India</h3>
+        <p class="distance">1491 kilometers away</p>
+        <p class="distance">17-22 Sep</p>
+        <p class="price"><span class="price-value">₹9347</span> night</p>
+    </div>
+   </div>
+ </div>
+
+ <!-- map -->
+<div class="map">
+  <p>Show Map</p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+  </svg>
+</div>
+  
+    
+</body>
+</html>
